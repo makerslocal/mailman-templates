@@ -195,6 +195,7 @@
      .title05 {
         background: url(//upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Wiki-broom.svg/40px-Wiki-broom.svg.png) no-repeat left top;
       }
+
     </style>
   </head>
   <body>
@@ -208,42 +209,27 @@
         <p><MM-List-Info></p>
         <ul>
           <li>Visit the <MM-Archive><MM-List-Name> Archives</MM-Archive>. <MM-Restricted-List-Message></li>
-          <li>Send email to <A HREF="mailto:<MM-Posting-Addr>"><MM-Posting-Addr></A>.</li>
+          <li>Once subscribed, send email to <A HREF="mailto:<MM-Posting-Addr>"><MM-Posting-Addr></A>.</li>
         </ul>
       </div>
       <div id="two-column">
         <div class="box-content" id="subscribe">
           <h3 class="title title01">Subscribe</h3>
           <MM-Subscribe-Form-Start>
-          <table>
-            <tr><td>Your e-mail address:</td><td><MM-Subscribe-Box></td></tr>
-            <tr><td>Your name (optional):</td><td><mm-fullname-box></td></tr>
-            <!-- Optional Password Fields (can leave out for public lists as Mailman auto-generates) -->
-            <!-- Password reminders can always be requested through web interface -->
-            <!-- Most likely only to be used with lists with private archives or subscription lists -->
-            <!-- <tr><td>Password:</td><td><MM-New-Password-Box></td></tr> -->
-            <!-- <tr><td>Confirm Password:</td><td><MM-Confirm-Password></td></tr> -->
-            <!-- Part of the multilingual selector below -->
-            <tr><td>Preferred language:</td><td><MM-list-langs></td></tr>
+          To subscribe, enter your email address: 
+          <table style="margin-left: auto; margin-right: auto;">
+            <tr><td><MM-Subscribe-Box></td><td><MM-Subscribe-Button></td></tr>
           </table>
           <p><MM-Reminder></p>
-          <p><mm-digest-question-start> Would you like to receive list mail batched in a daily digest? 
-          <MM-Undigest-Radio-Button> No <MM-Digest-Radio-Button>  Yes <mm-digest-question-end></p>
           <!-- MM-List-Subscription-Msg gives extra details about the subscription rules of the list -->
           <!-- This is optional, and will include variations between subscription rules (confirm vs confirm and approve) -->
           <!-- On the majority of lists this can be commented out as subscription rules will simply be confirm -->
           <MM-List-Subscription-Msg>
-          <p style="text-align: center"><MM-Subscribe-Button><MM-Form-End></p>
+          <MM-Form-End>
         </div>
-        <div class="box-content" id="members">
-          <h3 class="title title03">List members</h3>
-          <!-- MM-Roster-Form gives easy access to the subscribers list from the main list info page -->
-          <!-- You can comment the line below out for when you don't need to give access to the subscribers list -->
-          <!-- For example for announcement mailing lists or mailing lists with a large number of subscribers  -->
-          <p><MM-Roster-Form-Start><MM-Roster-Option><MM-Form-End></p></div>
         <div class="box-content" id="manage">
           <h3 class="title title04">Change your settings or unsubscribe</h3>
-          <p><MM-Options-Form-Start><MM-Editing-Options><MM-Form-End></p>
+          <p><MM-Options-Form-Start><MM-Editing-Options>.</p><MM-Form-End>
         </div>
         <div class="box-content" id="admins">
           <h3 class="title title05">Admins</h3>
