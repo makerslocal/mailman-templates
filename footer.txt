@@ -1,0 +1,4 @@
+_______________________________________________
+This is the %(real_name)s mailing list.
+This list is for %(description)s.
+To stop receiving mail from this list, write to %(real_name)s-leave@lists.makerslocal.org.
